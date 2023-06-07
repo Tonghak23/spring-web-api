@@ -1,0 +1,14 @@
+package com.tonghak;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class SpringExampleApiApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(SpringExampleApiApplication.class, args);
+	}
+
+
+}
