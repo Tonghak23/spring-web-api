@@ -19,16 +19,16 @@ public class DepartmentService {
     @Autowired
     private CompanyRepository companyRepository;
 
-    public Department createDepartment(Department department, Long id) {
+    // public Department createDepartment(Department department, Long id) {
 
-        Company company = companyRepository.findById(id).orElse(null);
-        if(company == null) {
-            throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Invalid company id");
-        }
+    //     Company company = companyRepository.findById(id).orElse(null);
+    //     if(company == null) {
+    //         throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Invalid company id");
+    //     }
 
-        company.setName(department.getCompany().getName());
-        department.setCompany(company);
-        return departmentRepository.save(department);
-        // return null;
-    }
+    //     company.setName(department.getCompany().getName());
+    //     department.setCompany(company);
+    //     return departmentRepository.save(department);
+    //     // return null;
+    // }
 }

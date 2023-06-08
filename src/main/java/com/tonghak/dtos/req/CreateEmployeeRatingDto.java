@@ -1,7 +1,5 @@
 package com.tonghak.dtos.req;
 
-import com.tonghak.models.Company;
-
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -9,11 +7,10 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class CreateDepartmentDto {
-    
-    private String name;
-    
-    private String slug;
+public class CreateEmployeeRatingDto {
 
-    private Company company;
+    private String employee_id;
+    
+    private String rating_id;
+
 }
